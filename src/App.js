@@ -19,12 +19,16 @@ import LifecycleA from "./components/LifecycleA";
 import LifecycleB from "./components/LifecycleB";
 import Fragment from "./components/Fragment";
 import Table from "./components/Table";
+import PureComp from "./components/PureComp";
+import ParentComp from "./components/ParentComp";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Table />
+        <ParentComp />
+        {/* <PureComp /> */}
+        {/* <Table /> */}
         {/* < Fragment /> */}
         {/* <LifecycleA /> */}
         {/* < Form /> */}
