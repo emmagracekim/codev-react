@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 // import logo from "./logo.svg";
 import "./App.css";
+import FocusInput from "./components/FocusInput";
+import FRParentInput from "./components/FRParentInput";
+import Hero from "./components/Hero";
 // import Greet from "./components/Greet";
 // import Welcome from "./components/Welcome";
 // import Hello from "./components/Hello";
@@ -21,12 +24,21 @@ import "./App.css";
 // import Table from "./components/Table";
 // import PureComp from "./components/PureComp";
 import ParentComp from "./components/ParentComp";
+import PortalDemo from "./components/PortalDemo";
+import RefsDemo from "./components/RefsDemo";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <ParentComp />
+        <Hero heroName="Batman"></Hero>
+        <Hero heroName="Superman"></Hero>
+
+        {/* <PortalDemo /> */}
+        {/* <FRParentInput /> */}
+        {/* <FocusInput /> */}
+        {/* <RefsDemo /> */}
+        {/* <ParentComp /> */}
         {/* <PureComp /> */}
         {/* <Table /> */}
         {/* < Fragment /> */}
