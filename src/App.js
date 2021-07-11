@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 // import logo from "./logo.svg";
 import "./App.css";
-import FocusInput from "./components/FocusInput";
-import FRParentInput from "./components/FRParentInput";
-import Hero from "./components/Hero";
+// import FocusInput from "./components/FocusInput";
+// import FRParentInput from "./components/FRParentInput";
+// import Hero from "./components/Hero";
 // import Greet from "./components/Greet";
 // import Welcome from "./components/Welcome";
 // import Hello from "./components/Hello";
@@ -23,17 +23,28 @@ import Hero from "./components/Hero";
 // import Fragment from "./components/Fragment";
 // import Table from "./components/Table";
 // import PureComp from "./components/PureComp";
-import ParentComp from "./components/ParentComp";
-import PortalDemo from "./components/PortalDemo";
-import RefsDemo from "./components/RefsDemo";
+// import ParentComp from "./components/ParentComp";
+// import PortalDemo from "./components/PortalDemo";
+// import RefsDemo from "./components/RefsDemo";
+// import ErrorBoundary from "./components/ErrorBoundary";
+import ClickCounter from "./components/ClickCounter";
+import HoverCounter from "./components/HoverCounter";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Hero heroName="Batman"></Hero>
-        <Hero heroName="Superman"></Hero>
-
+        <ClickCounter name="Emma" />
+        <HoverCounter />
+        {/* <ErrorBoundary>
+          <Hero heroName="Batman"></Hero>
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <Hero heroName="Superman"></Hero>
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <Hero heroName="Joker"></Hero>
+        </ErrorBoundary> */}
         {/* <PortalDemo /> */}
         {/* <FRParentInput /> */}
         {/* <FocusInput /> */}
